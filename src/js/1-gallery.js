@@ -75,7 +75,8 @@ const markup = images
         <img 
             class="gallery-image" 
             src="${image.preview}" 
-            alt="${image.description}" 
+            alt="${image.description}"
+            width="360" height="200" 
             />
     </a>
 </li>`
