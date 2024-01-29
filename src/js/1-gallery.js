@@ -83,15 +83,10 @@ const markup = images
   )
   .join('');
 
-gallery.innerHTML = markup;
+gallery.insertAdjacentHTML(markup);
 
 const options = {
-  captions: true,
-  captionSelector: 'img',
-  captionType: 'attr',
-  captionsData: 'alt',
-  captionPosition: 'bottom',
-  animation: 250,
+  captionDelay: 250,
 };
 
 const lightbox = new SimpleLightbox('.gallery a', options);
