@@ -24,6 +24,10 @@ form.addEventListener('input', event => {
 // Adding submit event listener
 form.addEventListener('submit', event => {
   event.preventDefault();
+    if (form.elements.email.value === '' || form.elements.message.value === ''){
+    alert('Please fill in both email and message fields');
+    return;
+  }
 
   // Getting and logging form data
   const formData = {
